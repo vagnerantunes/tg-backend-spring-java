@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -27,6 +29,7 @@ public class Venda implements Serializable{
 	
 	@Id
 	@Column(length = 11, name = "VEN_ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer venId;
 	
 	@NotNull 

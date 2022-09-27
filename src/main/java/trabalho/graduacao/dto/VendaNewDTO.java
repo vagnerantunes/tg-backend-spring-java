@@ -14,7 +14,7 @@ import lombok.Setter;
 public class VendaNewDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-
+	
 	private Double venQtd;
 
 	private String venObservacao;
